@@ -1,0 +1,55 @@
+set nocp
+
+syntax enable
+filetype plugin on
+set background=dark
+colorscheme solarized
+
+let dart_style_guide=2
+
+set number
+set tabstop=2
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+
+set hidden
+
+"ino " ""<left>
+"ino ' ''<left>
+"ino ( ()<left>
+"ino [ []<left>
+"ino { {}<left>
+"ino {<CR> {<CR>}<ESC>O
+"ino {<CR> {<CR>}<ESC>O
+"ino {<CR> {<CR>}<ESC>O
+
+" Search down into subfolders
+" Provides tab-completion for all file-related tasks
+set path+=**
+
+" Display all matching files when we tab complete
+set wildmenu
+
+" NOW WE CAN:
+" - Hit tab to :find by partial match
+" - Use * to make it fuzzy
+
+" learn ctags for tag jumping
+"
+" Autocomplete
+" - ^n for anything specified by the 'complete' option.
+" - ^x^n for JUST this file
+" - ^x^f for filenames (works with path tricks!)
+" - ^x^] for tags only (need ctags?)
+" - Use ^n and ^p to go back and forth
+" - Use ^e to exit autocomplete back to original typing.
+
+" Tweaks for browsing
+" let g:netrw_banner=0 " disable annoying banner
+" let g:netrw_browse_split=4 " open in prior window
+" let g:netrw_altv=1 " open splits to the right
+" let g:netrw_liststyle=3 " tree view
+" let g:netrw_list_hide=netrw_gitignore#hide()
+" let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
